@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Lista Spaghetto</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>Spaghetto <small>Lista de Compras</small></h1>
+  </div>
+
+  <table id="lista_tabela" class="table table-striped table-bordered table-hover w-100">
+    <thead class="thead-light">
+      <tr class="w-100">
+        <th class="w-25">Produto</th>
+        <th class="w-25">UDM</th>
+        <th class="w-25">Qtd</th>
+        <th class="w-25">Obs</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr>
+        <td class="align-middle">Agrião</td>
+        <td>
+          <select class="form-control">
+            <option value="Maço">Maço</option>
+          </select>
+        </td>
+        <td><input type="number" class="form-control"></td>
+        <td><input type="text" class="form-control"></td>
+      </tr>
+      <tr>
+        <td class="align-middle">Agrião Hidropônico</td>
+        <td>
+          <select class="form-control">
+            <option value="Maço">Maço</option>
+          </select>
+        </td>
+        <td><input type="number" class="form-control"></td>
+        <td><input type="text" class="form-control"></td>
+      </tr>
+      <tr>
+        <td class="align-middle">Aipim</td>
+        <td>
+          <select class="form-control">
+            <option value="Kilo">Kilo</option>
+          </select>
+        </td>
+        <td><input type="number" class="form-control"></td>
+        <td><input type="text" class="form-control"></td>
+      </tr>
+      <tr>
+        <td class="align-middle">Alface Americana</td>
+        <td>
+          <select class="form-control">
+            <option value="Bandeja">Bandeja</option>
+          </select>
+        </td>
+        <td><input type="number" class="form-control"></td>
+        <td><input type="text" class="form-control"></td>
+      </tr>
+      <tr>
+        <td class="align-middle">Alho 10 Kg</td>
+        <td>
+          <select class="form-control">
+            <option value="Caixa">Caixa</option>
+          </select>
+        </td>
+        <td><input type="number" class="form-control"></td>
+        <td><input type="text" class="form-control"></td>
+      </tr>
+      <tr>
+        <td class="align-middle">Batata Asterix</td>
+        <td>
+          <select class="form-control">
+            <option value="Saco">Saco</option>
+          </select>
+        </td>
+        <td><input type="number" class="form-control"></td>
+        <td><input type="text" class="form-control"></td>
+      </tr>
+      <tr>
+        <td class="align-middle">Beringela</td>
+        <td>
+          <select class="form-control">
+            <option value="Kilo">Kilo</option>
+          </select>
+        </td>
+        <td><input type="number" class="form-control"></td>
+        <td><input type="text" class="form-control"></td>
+      </tr>
+      <tr>
+        <td class="align-middle">Brócolis Comum</td>
+        <td>
+          <select class="form-control">
+            <option value="Maço">Maço</option>
+          </select>
+        </td>
+        <td><input type="number" class="form-control"></td>
+        <td><input type="text" class="form-control"></td>
+      </tr>
+      <tr>
+        <td class="align-middle">Brócolis Comum Paulista</td>
+        <td>
+          <select class="form-control">
+            <option value="Maço">Maço</option>
+          </select>
+        </td>
+        <td><input type="number" class="form-control"></td>
+        <td><input type="text" class="form-control"></td>
+      </tr>
+      <tr>
+        <td class="align-middle">Cebola</td>
+        <td>
+          <select class="form-control">
+            <option value="Kilo">Kilo</option>
+          </select>
+        </td>
+        <td><input type="number" class="form-control"></td>
+        <td><input type="text" class="form-control"></td>
+      </tr>
+      <tr>
+        <td class="align-middle">Cenoura</td>
+        <td>
+          <select class="form-control">
+            <option value="Kilo">Kilo</option>
+          </select>
+        </td>
+        <td><input type="number" class="form-control"></td>
+        <td><input type="text" class="form-control"></td>
+      </tr>
+      <tr>
+        <td class="align-middle">Espinafre</td>
+        <td>
+          <select class="form-control">
+            <option value="Maço">Maço</option>
+          </select>
+        </td>
+        <td><input type="number" class="form-control"></td>
+        <td><input type="text" class="form-control"></td>
+      </tr>
+      <tr>
+        <td class="align-middle">Laranja</td>
+        <td>
+          <select class="form-control">
+            <option value="Caixa">Caixa</option>
+          </select>
+        </td>
+        <td><input type="number" class="form-control"></td>
+        <td><input type="text" class="form-control"></td>
+      </tr>
+      <tr>
+        <td class="align-middle">Limão</td>
+        <td>
+          <select class="form-control">
+            <option value="Kilo">Kilo</option>
+          </select>
+        </td>
+        <td><input type="number" class="form-control"></td>
+        <td><input type="text" class="form-control"></td>
+      </tr>
+      <tr>
+        <td class="align-middle">Manjericão Grande</td>
+        <td>
+          <select class="form-control">
+            <option value="Maço">Maço</option>
+          </select>
+        </td>
+        <td><input type="number" class="form-control"></td>
+        <td><input type="text" class="form-control"></td>
+      </tr>
+      <tr>
+        <td class="align-middle">Ovos Brancos Extra</td>
+        <td>
+          <select class="form-control">
+            <option value="Caixa">Caixa</option>
+          </select>
+        </td>
+        <td><input type="number" class="form-control"></td>
+        <td><input type="text" class="form-control"></td>
+      </tr>
+      <tr>
+        <td class="align-middle">Pepino Japonês</td>
+        <td>
+          <select class="form-control">
+            <option value="Kilo">Kilo</option>
+          </select>
+        </td>
+        <td><input type="number" class="form-control"></td>
+        <td><input type="text" class="form-control"></td>
+      </tr>
+      <tr>
+        <td class="align-middle">Pimenta Malagueta</td>
+        <td>
+          <select class="form-control">
+            <option value="Kilo">Kilo</option>
+          </select>
+        </td>
+        <td><input type="number" class="form-control"></td>
+        <td><input type="text" class="form-control"></td>
+      </tr>
+      <tr>
+        <td class="align-middle">Pimentão Amarelo</td>
+        <td>
+          <select class="form-control">
+            <option value="Kilo">Kilo</option>
+          </select>
+        </td>
+        <td><input type="number" class="form-control"></td>
+        <td><input type="text" class="form-control"></td>
+      </tr>
+      <tr>
+        <td class="align-middle">Pimentão Verde</td>
+        <td>
+          <select class="form-control">
+            <option value="Kilo">Kilo</option>
+          </select>
+        </td>
+        <td><input type="number" class="form-control"></td>
+        <td><input type="text" class="form-control"></td>
+      </tr>
+      <tr>
+        <td class="align-middle">Pimentão Vermelho</td>
+        <td>
+          <select class="form-control">
+            <option value="Kilo">Kilo</option>
+          </select>
+        </td>
+        <td><input type="number" class="form-control"></td>
+        <td><input type="text" class="form-control"></td>
+      </tr>
+      <tr>
+        <td class="align-middle">Radite Roxo</td>
+        <td>
+          <select class="form-control">
+            <option value="Bandeja">Bandeja</option>
+          </select>
+        </td>
+        <td><input type="number" class="form-control"></td>
+        <td><input type="text" class="form-control"></td>
+      </tr>
+      <tr>
+        <td class="align-middle">Repolho</td>
+        <td>
+          <select class="form-control">
+            <option value="Unidade">Unidade</option>
+          </select>
+        </td>
+        <td><input type="number" class="form-control"></td>
+        <td><input type="text" class="form-control"></td>
+      </tr>
+      <tr>
+        <td class="align-middle">Repolho Roxo</td>
+        <td>
+          <select class="form-control">
+            <option value="Unidade">Unidade</option>
+          </select>
+        </td>
+        <td><input type="number" class="form-control"></td>
+        <td><input type="text" class="form-control"></td>
+      </tr>
+      <tr>
+        <td class="align-middle">Rúcula Hidropônica</td>
+        <td>
+          <select class="form-control">
+            <option value="Maço">Maço</option>
+          </select>
+        </td>
+        <td><input type="number" class="form-control"></td>
+        <td><input type="text" class="form-control"></td>
+      </tr>
+      <tr>
+        <td class="align-middle">Salsa</td>
+        <td>
+          <select class="form-control">
+            <option value="Maço">Maço</option>
+          </select>
+        </td>
+        <td><input type="number" class="form-control"></td>
+        <td><input type="text" class="form-control"></td>
+      </tr>
+      <tr>
+        <td class="align-middle">Sálvia</td>
+        <td>
+          <select class="form-control">
+            <option value="Bandeja">Bandeja</option>
+          </select>
+        </td>
+        <td><input type="number" class="form-control"></td>
+        <td><input type="text" class="form-control"></td>
+      </tr>
+      <tr>
+        <td class="align-middle">Tomate Cereja</td>
+        <td>
+          <select class="form-control">
+            <option value="Bandeja">Bandeja</option>
+          </select>
+        </td>
+        <td><input type="number" class="form-control"></td>
+        <td><input type="text" class="form-control"></td>
+      </tr>
+      <tr>
+        <td class="align-middle">Tomate Longa Vida</td>
+        <td>
+          <select class="form-control">
+            <option value="Kilo">Kilo</option>
+          </select>
+        </td>
+        <td><input type="number" class="form-control"></td>
+        <td><input type="text" class="form-control"></td>
+      </tr>
+      <tr>
+        <td class="align-middle">Vagem Italiana</td>
+        <td>
+          <select class="form-control">
+            <option value="Kilo">Kilo</option>
+          </select>
+        </td>
+        <td><input type="number" class="form-control"></td>
+        <td><input type="text" class="form-control"></td>
+      </tr>
+    </tbody>
+    <tfoot class="thead-light">
+      <tr>
+        <th><button type="submit" class="btn btn-default" onclick="adicionarItem()">Adicionar Item</button></th>
+      </tr>
+    </tfoot>
+  </table>
+
+  <div class="footer">
+    <button type="submit" class="btn btn-default" onclick="limparLista()">Limpar Lista</button>
+    <button type="submit" class="btn btn-default" onclick="enviarLista()">Enviar Lista</button>
+    <input type="hidden" id="nome_cliente" value="Spaghetto" />
+  </div>
+</body>
+</html>
