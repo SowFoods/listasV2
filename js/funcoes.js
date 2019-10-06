@@ -64,14 +64,16 @@ function enviarLista() {
       texto = texto.concat(linha.cells[2].getElementsByTagName("input")[0].value + " ");
 
       if (linha.cells[1].getElementsByTagName("select")[0] != null) {
-        var e = linha.cells[1].getElementsByTagName("select")[0];
-        texto = texto.concat(e.options[e.selectedIndex].text);
+        var select = linha.cells[1].getElementsByTagName("select")[0];
+        texto = texto.concat(select.options[select.selectedIndex].text);
       } else {
         texto = texto.concat(linha.cells[1].getElementsByTagName("input")[0].value);
       }
 
       if (linha.cells[2].getElementsByTagName("input")[0].value > 1) {
-        texto = texto.concat("s");
+        if (!texto.endsWith("s")) {
+          texto = texto.concat("s");
+        }
       }
       if (linha.cells[3].getElementsByTagName("input")[0].value.length != 0) {
         texto = texto.concat(" (" + linha.cells[3].getElementsByTagName("input")[0].value + ")");
