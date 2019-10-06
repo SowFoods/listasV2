@@ -35,11 +35,11 @@ function limparLista() {
   while (linha = tabela.rows[l++]) {
     linha.cells[2].getElementsByTagName("input")[0].value = null;
     linha.cells[3].getElementsByTagName("input")[0].value = null;
+  }
 
-    if (linha.classList.contains("nova-linha")) {
-      linha.cells[0].getElementsByTagName("input")[0].value = null;
-      linha.cells[1].getElementsByTagName("input")[0].value = null;
-    }
+  var linhas = document.getElementsByClassName('nova-linha');
+  while (linhas[0]) {
+    linhas[0].parentNode.removeChild(linhas[0]);
   }
 }
 
