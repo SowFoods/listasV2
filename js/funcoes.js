@@ -1,6 +1,7 @@
 function adicionarItem() {
   var tabela = document.getElementById("lista_tabela").getElementsByTagName('tbody')[0];
   var linha = tabela.insertRow(-1);
+  linha.classList.add("nova-linha");
 
   var coluna_produto = linha.insertCell(0);
   var input_produto = document.createElement("input");
@@ -28,12 +29,17 @@ function adicionarItem() {
 }
 
 function limparLista() {
-  var tabela = document.getElementById("lista_tabela");
-  var l = 1;
+  var tabela = document.getElementById("lista_tabela").getElementsByTagName('tbody')[0];
+  var l = 0;
 
   while (linha = tabela.rows[l++]) {
     linha.cells[2].getElementsByTagName("input")[0].value = null;
     linha.cells[3].getElementsByTagName("input")[0].value = null;
+
+    if (linha.classList.contains("nova-linha")) {
+      linha.cells[0].getElementsByTagName("input")[0].value = null;
+      linha.cells[1].getElementsByTagName("input")[0].value = null;
+    }
   }
 }
 
